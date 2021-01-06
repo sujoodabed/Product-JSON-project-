@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container py-5">
+            <div class="form-group" >
+              <input type="text" class="form-control" placeholder="product name" id="productName">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="product combany" id="productCombany">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="product price"id="productPrice">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="product descreption"id="productDescreption"></textarea>    <!--وضع اغلاق التاج تاع التكست في نفس السطر حتى تشتغل البليس هولدر-->
+                
+              </div>
+              <button class="btn btn-info" id="addBtn" >add product</button>
+              <input onkeyup="search(this.value)" class=" form-control my-3" placeholder=" search here ..">
+              <!--console.log(this.value)" => حتى اوصل لقيمة هاد الغنصر بدون لاحتاج ل اي دي  -->
+        </div>
+
+
+
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    <th>product Name</th>
+                    <th>product Combany</th>
+                    <th>product Price</th>
+                    <th>product Descreption</th>
+                </thead>
+                <tbody id="tableBody">
+                    
+                </tbody>
+
+            </table>
+        </div>
+
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
